@@ -19,4 +19,4 @@ FROM
 		count(*) as count
 	FROM {{source('bronze', 'google_sheetsSheet1')}}
 	group by "If_you_are_executing_any_of_the_freight_tasks_mentioned_before_"),
-    Total;
+    Total
