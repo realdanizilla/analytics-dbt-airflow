@@ -4,7 +4,7 @@ from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
 from datetime import datetime
 
 DBT_CLOUD_CONN_ID = "dbt-conn"
-JOB_ID = "70403103919624"
+JOB_ID = "70471823412096"
 
 @dag(
     start_date=datetime(2024, 4, 18),
