@@ -4,8 +4,8 @@ from airflow import DAG
 from airflow.decorators import task
 from airflow.operators.bash import BashOperator
 
-# A DAG represents a workflow, a collection of tasks
-with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") as dag:
+# A DAG represents a workflow, a collection of tasks, catchup=False means that we don't want to run the tasks for the past days
+with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *", catchup=False) as dag:
     # Tasks are represented as operators
     hello = BashOperator(task_id="hello", bash_command="echo hello")
 
