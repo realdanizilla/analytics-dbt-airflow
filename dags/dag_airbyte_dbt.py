@@ -12,7 +12,7 @@ AIRBYTE_CONNETCION_ID = Variable.get("AIRBYTE_GOOGLE_POSTGRES_CONNECTION_ID")
 API_KEY = f'Bearer {Variable.get("AIRBYTE_API_TOKEN")}'
 
 DBT_CLOUD_CONN_ID = "dbt-conn"
-JOB_ID = "70403103919624"
+JOB_ID = "70471823412096"
 
 @dag(
     start_date=datetime(2024, 4, 18),
