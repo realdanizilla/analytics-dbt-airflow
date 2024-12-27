@@ -1,0 +1,8 @@
+sources:
+  - name: bronze
+    database: mypostgres_db
+    schema: bronze
+    tables:
+      - name: google_sheetsSheet1
+        description: "data imported from google sheets"
+  
